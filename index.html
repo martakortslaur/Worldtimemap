@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- //From Iamrohit
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     //From Iamrohit -->
+	<link rel="stylesheet" type="text/css" href="index.css">
 
-    <link rel="stylesheet" type="text/css" href="index.css">
-
-    <title>World Time Map</title>
+	<title>World Timezone Picker</title>
 </head>
+
 <body>
+	<!-- <section class="main-content">
+		<h1>
+			<a id=""></a>
+			World Timezone Picker</h1>
 
-    <div>World Time Map</div>
-    <div id="map"></div>
+		<div></div> -->
+		<div id="map" style="width:80%"></div>
+		<!--Search field-->
+		<!-- <div class="mapboxgl-control-container"> -->
+			<!-- <div class="mapboxgl-ctrl-top-left"> -->
+				<div class="mapboxgl-ctrl-geocoder mapboxgl-ctrl">
+					<span class="geocoder-icon geocoder-icon-search"></span>
+					<input type="text" placeholder="Search">
+					<ul class="suggestions" style="display: none;"></ul>
+					<!-- <div class="geocoder-pin-right">
+						<button class="geocoder-icon geocoder-icon-close" aria-label="Clear"></button>
+						<span class="geocoder-icon geocoder-icon-loading"></span>
+					</div> -->
+				</div>
+			<!-- </div> -->
+        <!-- </div> -->
 
-    <script src="index.js"></script>
+	<!-- </section> -->
+	<script src="index.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgQiuGw__I7YN_MFHSXQmFKUFWQtIwi-I&callback=initMap"></script>
-    
-    
+    <script async defer src="https://maps.googleapis.com/maps/api/timezone/json?location=38.908133,-77.047119&timestamp=1458000000&key=AIzaSyBgQiuGw__I7YN_MFHSXQmFKUFWQtIwi-I"></script>
+
+
+	<!-- <script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.min.js"></script>
+	<script type="text/javascript"
+		src=" https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.4.1/moment-timezone-with-data-2010-2020.min.js">
+	</script>
+	<script type="text/javascript" src="timezone-picker.min.js"></script> -->
 </body>
+
 </html>

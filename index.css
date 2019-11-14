@@ -3,8 +3,40 @@ html, body {
     margin: 0;
     padding: 0;
 }
+/* html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+html, body {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fff;
+}
+body {
+    font-family: "Noto Sans",serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    background-color: #f5f5f5;
+} */
 
 #map {
-    min-height: 100%;
-    width: 100%
+    min-height: 700px;
+    width: 50%;
 }
+/* @media (min-width: 768px)
+.section-md {
+    padding: 6% 0;
+}
+@media screen and (min-width: 64em)
+.main-content {
+    max-width: 64rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+.section-md {
+    padding: 60px 0;
+} */
