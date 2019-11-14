@@ -20,26 +20,39 @@
 			World Timezone Picker</h1>
 
 		<div></div> -->
-		<div id="map" style="width:80%"></div>
-		<!--Search field-->
-		<!-- <div class="mapboxgl-control-container"> -->
-			<!-- <div class="mapboxgl-ctrl-top-left"> -->
-				<div class="mapboxgl-ctrl-geocoder mapboxgl-ctrl">
-					<span class="geocoder-icon geocoder-icon-search"></span>
-					<input type="text" placeholder="Search">
-					<ul class="suggestions" style="display: none;"></ul>
-					<!-- <div class="geocoder-pin-right">
+	<div id="map" style="width:80%"></div>
+	<select name="" id="countrycode">
+    </select>
+        <script>
+            var countrycode = ["Audi", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+            var i;
+            select = document.getElementById('countrycode');
+            for (i = 0; i < countrycode.length; i++) {
+                select.append('<option></option>').attr('value',i).text(countrycode [i]);
+            }
+        </script>
+     
+	<!--Search field-->
+	<!-- <div class="mapboxgl-control-container"> -->
+	<!-- <div class="mapboxgl-ctrl-top-left"> -->
+	<div class="mapboxgl-ctrl-geocoder mapboxgl-ctrl">
+		<span class="geocoder-icon geocoder-icon-search"></span>
+		<input type="text" placeholder="Search">
+		<ul class="suggestions" style="display: none;"></ul>
+		<!-- <div class="geocoder-pin-right">
 						<button class="geocoder-icon geocoder-icon-close" aria-label="Clear"></button>
 						<span class="geocoder-icon geocoder-icon-loading"></span>
 					</div> -->
-				</div>
-			<!-- </div> -->
-        <!-- </div> -->
+	</div>
+	<!-- </div> -->
+	<!-- </div> -->
 
 	<!-- </section> -->
 	<script src="index.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgQiuGw__I7YN_MFHSXQmFKUFWQtIwi-I&callback=initMap"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/timezone/json?location=38.908133,-77.047119&timestamp=1458000000&key=AIzaSyBgQiuGw__I7YN_MFHSXQmFKUFWQtIwi-I"></script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgQiuGw__I7YN_MFHSXQmFKUFWQtIwi-I&callback=initMap">
+	</script>
+	<!-- <script async defer src="https://maps.googleapis.com/maps/api/timezone/json?location=38.908133,-77.047119&timestamp=1458000000&key=AIzaSyCi8hsqT_zzHgVYqkK5KBGKve9gi8HPXQs"></script> -->
 
 
 	<!-- <script src="//code.jquery.com/jquery-latest.min.js"></script>
